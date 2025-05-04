@@ -22,7 +22,7 @@ This project includes the following components:
 
 * `Dijkstra` (Shortest path, fails on negative edges) - Finds the shortest paths from a given starting vertex using Dijkstra’s algorithm. It returns a directed tree rooted at the source node that contains the lowest-cost paths to reachable vertices.
 
-* `Prim` (MST) - Builds a Minimum Spanning Tree (MST) using Prim’s approach. The result is an undirected graph connecting all reachable nodes with minimal total edge weight.
+* `Prim` (MST) - Builds a Minimum Spanning Tree using Prim’s approach. The result is an undirected graph connecting all reachable nodes with minimal total edge weight.
 
 * `Kruskal` (MST using Union-Find) - Constructs a Minimum Spanning Tree by applying Kruskal’s method. It also returns an undirected MST formed by choosing the lowest-weight edges that avoid cycles.
 
