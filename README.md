@@ -1,4 +1,4 @@
-# Ex1 CPP
+# CPP - EX1
 
 ## Author
 Noa Patito 
