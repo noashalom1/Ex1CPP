@@ -323,3 +323,19 @@ TEST_CASE("Kruskal on disconnected graph builds minimum spanning forest") {
     CHECK(mst.getAdjSize(4) == 1);
     CHECK(mst.getAdjSize(5) == 1);
 }
+
+TEST_CASE("Kruskal on fully connected graph with negative weight") {
+    Graph g(4);
+    g.addEdge(0, 1, 5);
+    g.addEdge(0, 2, 3);
+    g.addEdge(0, 3, 4);
+    g.addEdge(1, 2, 2);
+    g.addEdge(1, 3, 1);
+    g.addEdge(2, 3, -4);
+    Graph mst = Algorithms::kruskal(g);
+    CHECK(mst.getNumEdges() == 3);
+    CHECK(mst.getAdjSize(0) == 1);
+    CHECK(mst.getAdjSize(1) == 1);
+    CHECK(mst.getAdjSize(2) == 2);           
+    CHECK(mst.getAdjSize(3) == 2);
+}
