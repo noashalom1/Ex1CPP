@@ -163,51 +163,6 @@ int main() {
     std::cout << "\n== Kruskal (MST) ==\n";
     Graph kruskalTree3 = Algorithms::kruskal(g2);
     kruskalTree3.print_graph();
-
-
     
-
-
-    // std::cout << "\n== Example Graph 4 ==\n";
-    // Graph g4(8);
-
-    // // Adding edges
-    // g4.addEdge(0, 1, 1);
-    // g4.addEdge(0, 2, 1);
-    // g4.addEdge(1, 2, 2);
-    // g4.addEdge(1, 3, 3);
-    // g4.addEdge(2, 3, 2);
-    // g4.addEdge(4, 5, 4);
-    // g4.addEdge(5, 6, 3);
-    // g4.addEdge(6, 7, 2);
-
-    // std::cout << "\nOriginal Graph:\n";
-    // g4.print_graph();
-
-    // // BFS
-    // std::cout << "\n== BFS from vertex 0 ==\n";
-    // Graph bfsTree4 = Algorithms::bfs(g4, 0);
-    // bfsTree4.print_graph();
-
-    // // DFS
-    // std::cout << "\n== DFS from vertex 0 ==\n";
-    // Graph dfsTree4 = Algorithms::dfs(g4, 0);
-    // dfsTree4.print_graph();
-
-    // // Dijkstra
-    // std::cout << "\n== Dijkstra from vertex 0 ==\n";
-    // Graph dijkstraTree4 = Algorithms::dijkstra(g4, 0);
-    // dijkstraTree4.print_graph();
-
-    // // Prim
-    // std::cout << "\n== Prim (MST) ==\n";
-    // Graph primTree4 = Algorithms::prim(g4, 0);
-    // primTree4.print_graph();
-
-    // // Kruskal
-    // std::cout << "\n== Kruskal (MST) ==\n";
-    // Graph kruskalTree4 = Algorithms::kruskal(g4);
-    // kruskalTree4.print_graph();
-
     return 0;
 }
