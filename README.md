@@ -10,7 +10,7 @@ This C++ project implements fundamental graph algorithms using object-oriented p
 
 This project includes the following components:
 
- **graph** - Defines the `Graph` class using an adjacency list implemented with raw pointers.
+**graph** - Defines the `Graph` class using an adjacency list implemented with raw pointers.
 * Manages adding/removing edges.
 * Provides methods for checking negative edges, printing the graph, and retrieving vertex neighbors.
 * Handles undirected graphs with validation and error throwing for invalid operations.
