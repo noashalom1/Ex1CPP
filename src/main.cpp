@@ -7,6 +7,7 @@
 using namespace graph; 
 
 int main() {
+    // Connected graph with no weights
     std::cout << "\n== Example 1 ==\n";
     Graph g1(6);
 
@@ -62,7 +63,7 @@ int main() {
     Graph kruskalTree1 = Algorithms::kruskal(g1);
     kruskalTree1.print_graph();
 
-
+    // Connected graph with weights
     std::cout << "\n== Example 2 ==\n";
     Graph g2(8);
 
