@@ -196,6 +196,22 @@ TEST_CASE("Prim on fully connected graph") {
     CHECK(mst.getAdjSize(3) == 1);
 }
 
+TEST_CASE("Prim on fully connected graph with negative weight") {
+    Graph g(4);
+    g.addEdge(0, 1, 5);
+    g.addEdge(0, 2, 3);
+    g.addEdge(0, 3, 4);
+    g.addEdge(1, 2, 2);
+    g.addEdge(1, 3, 1);
+    g.addEdge(2, 3, -4);
+    Graph mst = Algorithms::prim(g, 0);
+    CHECK(mst.getNumEdges() == 3);
+    CHECK(mst.getAdjSize(0) == 1);
+    CHECK(mst.getAdjSize(1) == 1);
+    CHECK(mst.getAdjSize(2) == 2);
+    CHECK(mst.getAdjSize(3) == 2);
+}
+
 TEST_CASE("Prim on graph with no edges") {
     Graph g(3);
     Graph tree = Algorithms::prim(g, 0);
