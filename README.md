@@ -63,3 +63,5 @@ Each algorithm is executed on these examples, and the results are printed using 
 * Manual memory management is used throughout.
 * STL containers (e.g., `vector`, `map`) are not used.
 * All errors (e.g., invalid edges, out-of-bounds access) throw exceptions.
+* I verified that the program has **no memory leaks** using **Valgrind**, which reported **no errors** during execution.
+
