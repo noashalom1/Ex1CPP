@@ -42,7 +42,7 @@ Supports enqueue, dequeue, isEmpty.
 * `test_union_find.cpp`: Find, union operations.
 * `test_queue.cpp`: Queue behavior, overflow/underflow.
 
-**Demo (main)** – The main.cpp file contains example demonstrations that showcase the usage of the implemented algorithms. It includes:
+**main** – The main.cpp file contains example demonstrations that showcase the usage of the implemented algorithms. It includes:
 * A connected graph without edge weights (default weights) to demonstrate traversal.
 * A connected graph with weighted edges to show the effect on MST and shortest paths.
 * A disconnected graph with weighted edges, highlighting how algorithms like Prim and Dijkstra behave in  partially connected components.
